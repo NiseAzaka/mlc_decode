@@ -18,6 +18,11 @@ COUNTS=${2:-5}
 CASENAME=${3:-mla_${KV_CTX}}
 REMOTE_PWD="1234Qwerasdf"
 LOG=${LOG:-/tmp/mcprof_${CASENAME}.log}
+# 默认跑 mla workload；跑 mhc_post 时：
+#   WORKLOAD_SCRIPT=run_mhc.sh OP_NAME=mhc_post CMD_ARGS="8192 4 4096" \
+#     bash scripts/run_mcprofiler.sh 8192_4096 5 mhc_post_8192x4096
+WORKLOAD_SCRIPT=${WORKLOAD_SCRIPT:-run_mla.sh}
+CMD_ARGS=${CMD_ARGS:-${KV_CTX}}
 
 cd /opt/mcProfiler-ubuntu18.04
 
@@ -31,18 +36,23 @@ mcProfiler perf_exec \
   --remote_port 22 \
   --remote_user root \
   --remote_pwd "${REMOTE_PWD}" \
-  --cmdline "bash scripts/run_mla.sh ${KV_CTX}" \
+  --cmdline "bash scripts/${WORKLOAD_SCRIPT} ${CMD_ARGS}" \
   --counts "${COUNTS}" 2>&1 | tee "${LOG}"
 
 echo "[mcprof] finished, log=${LOG}"
 
-# 把原始报告归档到仓库目录，避免留在 /opt/mcProfiler-ubuntu18.04 下被清理
+# 把原始报告归档到仓库目录，避免留在 /opt/mcProfiler-ubuntu18.04 下被清理。
+# 归档结构统一为 <算子名>/<shape>，与 mcprofiler_output 下已有目录保持一致：
+#   mla_decode/16384、mhc_post/8192_4096 ...
+# 跑其它算子时用 OP_NAME 覆盖，例如 OP_NAME=mhc_post
 ARCHIVE_DIR=${ARCHIVE_DIR:-/data/code/mcprofiler_output}
+OP_NAME=${OP_NAME:-mla_decode}
 REPORT_DIR=$(sed -n 's/.*please check report file \(\/[^ ]*\).*/\1/p' "${LOG}" | tail -1)
 if [ -n "${REPORT_DIR}" ] && [ -d "${REPORT_DIR}" ]; then
-  mkdir -p "${ARCHIVE_DIR}"
-  cp -r "${REPORT_DIR}" "${ARCHIVE_DIR}/"
-  echo "[mcprof] 报告已归档: ${ARCHIVE_DIR}/$(basename "${REPORT_DIR}")"
+  DEST="${ARCHIVE_DIR}/${OP_NAME}/${KV_CTX}"
+  mkdir -p "${DEST}"
+  cp -r "${REPORT_DIR}" "${DEST}/"
+  echo "[mcprof] 报告已归档: ${DEST}/$(basename "${REPORT_DIR}")"
 else
   echo "[mcprof] 未能从日志中定位报告目录，请检查 ${LOG}"
 fi
