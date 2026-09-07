@@ -1,0 +1,26 @@
+# ---------------- Python ----------------
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# ---------------- Jupyter ----------------
+.ipynb_checkpoints/
+
+# ---------------- 日志 ----------------
+*.log
+
+# ---------------- mcProfiler ----------------
+# 原始报告每次运行都会重新生成，单个 case 约 1.5MB（含 pdf/png/html），不入库
+mcprofiler_output/
+
+# ---------------- TileLang 调试产物 ----------------
+# scripts/dump_kernel_src.py 默认输出到 stdout，落盘时建议放在这里
+scripts/dump/
+kernel_*.cu
+
+# ---------------- 跑分结果 ----------------
+# baseline_mla.py / run_regression 会写出 *_results.csv 与 race_tests/
+race_tests/
+*_results.csv
