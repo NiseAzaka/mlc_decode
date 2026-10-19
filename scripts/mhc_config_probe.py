@@ -12,7 +12,7 @@ import itertools
 import os
 import sys
 
-MHC_ROOT = os.environ.get("MHC_ROOT", "/data/code/mhc_post")
+MHC_ROOT = os.environ.get("MHC_ROOT", "/data/mhc_post")
 sys.path.insert(0, MHC_ROOT)
 
 import torch

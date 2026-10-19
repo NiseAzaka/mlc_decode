@@ -1,0 +1,74 @@
+{
+  "16384": {
+    "block_H": 16,
+    "block_N": 32,
+    "combine_groups": 1,
+    "dim_chunk_num": 8,
+    "latency_us": 68.434,
+    "num_split": 104,
+    "num_stages": 1,
+    "q_in_reg": false,
+    "spread": true,
+    "threads": 128
+  },
+  "2048": {
+    "block_H": 16,
+    "block_N": 32,
+    "combine_groups": 1,
+    "dim_chunk_num": 8,
+    "latency_us": 22.292,
+    "num_split": 64,
+    "num_stages": 1,
+    "q_in_reg": false,
+    "spread": false,
+    "threads": 128
+  },
+  "32768": {
+    "block_H": 16,
+    "block_N": 32,
+    "combine_groups": 1,
+    "dim_chunk_num": 8,
+    "latency_us": 114.202,
+    "num_split": 104,
+    "num_stages": 1,
+    "q_in_reg": false,
+    "spread": true,
+    "threads": 128
+  },
+  "4096": {
+    "block_H": 16,
+    "block_N": 32,
+    "combine_groups": 1,
+    "dim_chunk_num": 8,
+    "latency_us": 29.609,
+    "num_split": 64,
+    "num_stages": 1,
+    "q_in_reg": false,
+    "spread": false,
+    "threads": 128
+  },
+  "65536": {
+    "block_H": 16,
+    "block_N": 32,
+    "combine_groups": 16,
+    "dim_chunk_num": 8,
+    "latency_us": 196.628,
+    "num_split": 256,
+    "num_stages": 1,
+    "q_in_reg": false,
+    "spread": false,
+    "threads": 128
+  },
+  "8192": {
+    "block_H": 16,
+    "block_N": 32,
+    "combine_groups": 1,
+    "dim_chunk_num": 8,
+    "latency_us": 44.79,
+    "num_split": 64,
+    "num_stages": 1,
+    "q_in_reg": false,
+    "spread": false,
+    "threads": 128
+  }
+}

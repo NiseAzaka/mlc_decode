@@ -7,7 +7,8 @@
 不指定 --out 时打印到 stdout。
 
 注意: 需要从优化版目录导入 tileops，运行前需
-    export PYTHONPATH=/opt/tilelang-metax-v0.1.10:/data/code/mhc_post:$PYTHONPATH
+    export PYTHONPATH=/opt/tilelang-metax-v0.1.10:/data/mhc_post:$PYTHONPATH
+（或用 MHC_ROOT 环境变量指定 mhc_post 仓库路径）
 """
 
 import argparse

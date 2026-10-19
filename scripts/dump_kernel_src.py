@@ -1,12 +1,12 @@
 """导出 TileLang 编译出的 C-like kernel 源码，用于访存/partition 分析。
 
 用法:
-    python scripts/dump_kernel_src.py --kv-ctx 16384 [--out /tmp/kernel_16384.cu]
+    python scripts/dump_kernel_src.py --kv-ctx 16384 [--impl ours|baseline] [--out /tmp/kernel_16384.cu]
 
 不指定 --out 时打印到 stdout。
 
 注意: TileLang 是源码就地编译的 MACA 版，运行前需
-    export PYTHONPATH=/opt/tilelang-metax-v0.1.10:/data/code:$PYTHONPATH
+    export PYTHONPATH=/opt/tilelang-metax-v0.1.10:<仓库根>:$PYTHONPATH
 """
 
 import argparse
@@ -15,6 +15,7 @@ import sys
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
+from baseline_mla import _get_kernel as _get_kernel_baseline  # noqa: E402
 from mla_decode import _get_kernel  # noqa: E402
 
 
@@ -26,11 +27,16 @@ def main():
     ap.add_argument("--kv-heads", type=int, default=1)
     ap.add_argument("--dim", type=int, default=512)
     ap.add_argument("--pe-dim", type=int, default=64)
+    ap.add_argument("--impl", choices=["ours", "baseline"], default="ours")
     ap.add_argument("--out", type=str, default=None)
     args = ap.parse_args()
 
-    kernel = _get_kernel(args.batch, args.heads, args.kv_heads, args.kv_ctx,
-                         args.dim, args.pe_dim)
+    if args.impl == "baseline":
+        kernel = _get_kernel_baseline(args.batch, args.heads, args.kv_heads, args.kv_ctx,
+                                      args.dim, args.pe_dim)
+    else:
+        kernel = _get_kernel(args.batch, args.heads, args.kv_heads, args.kv_ctx,
+                             args.dim, args.pe_dim)
     src = kernel.get_kernel_source()
 
     if args.out:

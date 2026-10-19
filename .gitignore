@@ -24,3 +24,8 @@ kernel_*.cu
 # baseline_mla.py / run_regression 会写出 *_results.csv 与 race_tests/
 race_tests/
 *_results.csv
+
+# ---------------- 构建产物 ----------------
+handmade/build/
+*.so
+*.o

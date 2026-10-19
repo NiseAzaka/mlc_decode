@@ -65,7 +65,7 @@ mcProfiler perf_exec \
   --remote_ip 127.0.0.1 \
   --remote_port 22 \
   --remote_user root \
-  --remote_pwd "1234Qwerasdf" \
+  --remote_pwd "1234QwerAsdf" \
   --cmdline "bash ../scripts/run.sh" \
   --counts 5
 ```
