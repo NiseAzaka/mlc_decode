@@ -1,0 +1,38 @@
+{
+  "perfList": {
+    "ISU": [
+      [
+        15,
+        "AP_PERF_INSTS_BSM"
+      ],
+      [
+        19,
+        "AP_PERF_INST_GLOBAL_WR"
+      ],
+      [
+        37,
+        "AP_PERF_INST_MMA_BF16"
+      ],
+      [
+        21,
+        "AP_PERF_INST_GLOBAL_ATOMIC_64"
+      ],
+      [
+        26,
+        "AP_PERF_INST_PRIVATE_RD"
+      ],
+      [
+        34,
+        "AP_PERF_INST_MMA_F32"
+      ]
+    ]
+  },
+  "action": "config,disable,read_dump,enable",
+  "conditions": {
+    "kernelnames": [],
+    "include": false,
+    "is_perkernel": false,
+    "is_multi_device": false,
+    "counts": 10
+  }
+}

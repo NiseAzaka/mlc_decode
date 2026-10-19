@@ -1,0 +1,30 @@
+{
+  "perfList": {
+    "ISU": [
+      [
+        35,
+        "AP_PERF_INST_MMA_TF32"
+      ],
+      [
+        1,
+        "AP_PERF_WAVES"
+      ],
+      [
+        89,
+        "AP_PERF_ISU_AP_BUSY"
+      ],
+      [
+        31,
+        "AP_PERF_INST_FMA_F32"
+      ]
+    ]
+  },
+  "action": "config,disable,read_dump,enable",
+  "conditions": {
+    "kernelnames": [],
+    "include": false,
+    "is_perkernel": false,
+    "is_multi_device": false,
+    "counts": 10
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "perfList": {
+    "ISU": [
+      [
+        73,
+        "AP_PERF_BSM_WR_CYCLES"
+      ],
+      [
+        1,
+        "AP_PERF_WAVES"
+      ],
+      [
+        34,
+        "AP_PERF_INST_MMA_F32"
+      ],
+      [
+        17,
+        "AP_PERF_INST_MISC"
+      ]
+    ]
+  },
+  "action": "config,disable,read_dump,enable",
+  "conditions": {
+    "kernelnames": [],
+    "include": false,
+    "is_perkernel": false,
+    "is_multi_device": false,
+    "counts": 10
+  }
+}

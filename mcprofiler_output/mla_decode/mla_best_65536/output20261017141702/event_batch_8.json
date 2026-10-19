@@ -1,0 +1,38 @@
+{
+  "perfList": {
+    "ISU": [
+      [
+        16,
+        "AP_PERF_INSTS_LDU"
+      ],
+      [
+        8,
+        "AP_PERF_INSTS_VALU"
+      ],
+      [
+        33,
+        "AP_PERF_INST_MMA_F64"
+      ],
+      [
+        9,
+        "AP_PERF_INSTS_MMA"
+      ],
+      [
+        53,
+        "AP_PERF_INST_CYCLES_VALU_16CYCLES"
+      ],
+      [
+        41,
+        "AP_PERF_INST_TRANS_FP16"
+      ]
+    ]
+  },
+  "action": "config,disable,read_dump,enable",
+  "conditions": {
+    "kernelnames": [],
+    "include": false,
+    "is_perkernel": false,
+    "is_multi_device": false,
+    "counts": 10
+  }
+}

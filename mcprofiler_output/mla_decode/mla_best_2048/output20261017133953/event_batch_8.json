@@ -1,0 +1,38 @@
+{
+  "perfList": {
+    "ISU": [
+      [
+        101,
+        "AP_PERF_MTE_PI_SEG_SEL_F64"
+      ],
+      [
+        11,
+        "AP_PERF_INSTS_GVM"
+      ],
+      [
+        54,
+        "AP_PERF_INST_CYCLES_MMA_16CYCLES"
+      ],
+      [
+        31,
+        "AP_PERF_INST_FMA_F32"
+      ],
+      [
+        19,
+        "AP_PERF_INST_GLOBAL_WR"
+      ],
+      [
+        18,
+        "AP_PERF_INST_GLOBAL_RD"
+      ]
+    ]
+  },
+  "action": "config,disable,read_dump,enable",
+  "conditions": {
+    "kernelnames": [],
+    "include": false,
+    "is_perkernel": false,
+    "is_multi_device": false,
+    "counts": 10
+  }
+}

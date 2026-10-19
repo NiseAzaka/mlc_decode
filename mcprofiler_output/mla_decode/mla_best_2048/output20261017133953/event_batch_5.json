@@ -1,0 +1,56 @@
+{
+  "perfList": {
+    "L2C": [
+      [
+        60,
+        "perf_dnoc_wrreq"
+      ],
+      [
+        21,
+        "perf_miss"
+      ],
+      [
+        45,
+        "perf_dnoc_rdreq"
+      ],
+      [
+        272,
+        "perf_dnoc_wrreq_128B"
+      ]
+    ],
+    "ISU": [
+      [
+        38,
+        "AP_PERF_INST_MMA_INT8"
+      ],
+      [
+        8,
+        "AP_PERF_INSTS_VALU"
+      ],
+      [
+        71,
+        "AP_PERF_BSM_ATOMIC_INFLIGHT_LEVEL"
+      ],
+      [
+        42,
+        "AP_PERF_INST_CYCLES_VALU"
+      ],
+      [
+        37,
+        "AP_PERF_INST_MMA_BF16"
+      ],
+      [
+        53,
+        "AP_PERF_INST_CYCLES_VALU_16CYCLES"
+      ]
+    ]
+  },
+  "action": "config,disable,read_dump,enable",
+  "conditions": {
+    "kernelnames": [],
+    "include": false,
+    "is_perkernel": false,
+    "is_multi_device": false,
+    "counts": 10
+  }
+}

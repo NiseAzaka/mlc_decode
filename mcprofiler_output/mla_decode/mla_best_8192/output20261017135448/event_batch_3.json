@@ -1,0 +1,66 @@
+{
+  "perfList": {
+    "ISU": [
+      [
+        20,
+        "AP_PERF_INST_GLOBAL_ATOMIC"
+      ],
+      [
+        81,
+        "AP_PERF_ISU_ARB_DATA_STALL"
+      ],
+      [
+        78,
+        "AP_PERF_BSM_CONFLICT_CYCLES"
+      ],
+      [
+        38,
+        "AP_PERF_INST_MMA_INT8"
+      ],
+      [
+        21,
+        "AP_PERF_INST_GLOBAL_ATOMIC_64"
+      ],
+      [
+        70,
+        "AP_PERF_BSM_READ_INFLIGHT_LEVEL"
+      ]
+    ],
+    "L2C": [
+      [
+        51,
+        "perf_dnoc_rdreq_inflight_level"
+      ],
+      [
+        48,
+        "perf_dnoc_rdreq_128B"
+      ],
+      [
+        45,
+        "perf_dnoc_rdreq"
+      ],
+      [
+        271,
+        "perf_dnoc_wrreq_64B"
+      ]
+    ],
+    "VL1": [
+      [
+        4,
+        "p_total_read_instruction_event"
+      ],
+      [
+        27,
+        "p_stall_due_oldest_pt1"
+      ]
+    ]
+  },
+  "action": "config,disable,read_dump,enable",
+  "conditions": {
+    "kernelnames": [],
+    "include": false,
+    "is_perkernel": false,
+    "is_multi_device": false,
+    "counts": 10
+  }
+}

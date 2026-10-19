@@ -1,0 +1,38 @@
+{
+  "perfList": {
+    "ISU": [
+      [
+        68,
+        "AP_PERF_BSM_INFLIGHT_LEVEL"
+      ],
+      [
+        17,
+        "AP_PERF_INST_MISC"
+      ],
+      [
+        54,
+        "AP_PERF_INST_CYCLES_MMA_16CYCLES"
+      ],
+      [
+        71,
+        "AP_PERF_BSM_ATOMIC_INFLIGHT_LEVEL"
+      ],
+      [
+        30,
+        "AP_PERF_INST_BSM_ATOMIC"
+      ],
+      [
+        32,
+        "AP_PERF_INST_FMA_F64"
+      ]
+    ]
+  },
+  "action": "config,disable,read_dump,enable",
+  "conditions": {
+    "kernelnames": [],
+    "include": false,
+    "is_perkernel": false,
+    "is_multi_device": false,
+    "counts": 10
+  }
+}

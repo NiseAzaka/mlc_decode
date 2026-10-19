@@ -1,0 +1,30 @@
+{
+  "perfList": {
+    "ISU": [
+      [
+        79,
+        "AP_PERF_ISU_ARB_WSM_STALL"
+      ],
+      [
+        53,
+        "AP_PERF_INST_CYCLES_VALU_16CYCLES"
+      ],
+      [
+        82,
+        "AP_PERF_ISU_ARB_VALU_STALL"
+      ],
+      [
+        39,
+        "AP_PERF_INST_MMA_TF64"
+      ]
+    ]
+  },
+  "action": "config,disable,read_dump,enable",
+  "conditions": {
+    "kernelnames": [],
+    "include": false,
+    "is_perkernel": false,
+    "is_multi_device": false,
+    "counts": 10
+  }
+}

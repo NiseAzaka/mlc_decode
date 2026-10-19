@@ -1,0 +1,52 @@
+{
+  "perfList": {
+    "L2C": [
+      [
+        1,
+        "1_b1"
+      ],
+      [
+        271,
+        "perf_dnoc_wrreq_64B"
+      ],
+      [
+        53,
+        "perf_dnoc_rd_histogram_256_511"
+      ]
+    ],
+    "ISU": [
+      [
+        41,
+        "AP_PERF_INST_TRANS_FP16"
+      ],
+      [
+        69,
+        "AP_PERF_BSM_WR_INFLIGHT_LEVEL"
+      ],
+      [
+        88,
+        "AP_PERF_BSM_INFLIGHT_LEVEL_IN_AP"
+      ],
+      [
+        25,
+        "AP_PERF_INST_GENERIC_WR"
+      ],
+      [
+        72,
+        "AP_PERF_BSM_RD_CYCLES"
+      ],
+      [
+        78,
+        "AP_PERF_BSM_CONFLICT_CYCLES"
+      ]
+    ]
+  },
+  "action": "config,disable,read_dump,enable",
+  "conditions": {
+    "kernelnames": [],
+    "include": false,
+    "is_perkernel": false,
+    "is_multi_device": false,
+    "counts": 10
+  }
+}

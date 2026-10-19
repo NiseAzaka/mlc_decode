@@ -1,0 +1,130 @@
+{
+  "perfList": {
+    "L2C": [
+      [
+        54,
+        "perf_dnoc_rd_histogram_512_1K"
+      ],
+      [
+        270,
+        "perf_dnoc_wrreq_32B_high"
+      ],
+      [
+        20,
+        "perf_sector_hit"
+      ],
+      [
+        48,
+        "perf_dnoc_rdreq_128B"
+      ]
+    ],
+    "RM": [
+      [
+        20,
+        "RM_PERF_DISPATCHED_WAVES_P1"
+      ],
+      [
+        42,
+        "RM_PERF_WAVES_InFlight_Level_P2"
+      ],
+      [
+        58,
+        "RM_PERF_WAVES_InFlight_Level_P3"
+      ],
+      [
+        10,
+        "RM_PERF_WAVES_InFlight_Level_P0"
+      ]
+    ],
+    "ISU": [
+      [
+        70,
+        "AP_PERF_BSM_READ_INFLIGHT_LEVEL"
+      ],
+      [
+        9,
+        "AP_PERF_INSTS_MMA"
+      ],
+      [
+        82,
+        "AP_PERF_ISU_ARB_VALU_STALL"
+      ],
+      [
+        89,
+        "AP_PERF_ISU_AP_BUSY"
+      ],
+      [
+        34,
+        "AP_PERF_INST_MMA_F32"
+      ],
+      [
+        35,
+        "AP_PERF_INST_MMA_TF32"
+      ]
+    ],
+    "VL1": [
+      [
+        78,
+        "p_perf_miss_cnt"
+      ],
+      [
+        5,
+        "p_total_write_instruction_event"
+      ],
+      [
+        27,
+        "p_stall_due_oldest_pt1"
+      ],
+      [
+        153,
+        "perf_inflt_rd_req"
+      ]
+    ],
+    "SL1": [
+      [
+        34,
+        "sl1_kcache_rd"
+      ],
+      [
+        56,
+        "sl1_kcache_total_miss_event"
+      ],
+      [
+        55,
+        "sl1_kcache_total_hit_event"
+      ],
+      [
+        35,
+        "sl1_kcache_l2_rd"
+      ]
+    ],
+    "CE": [
+      [
+        3,
+        "CE_PERF_SEND_RM_WORKGROUPS"
+      ],
+      [
+        2,
+        "CE_PERF_BUSY_CYCLES"
+      ],
+      [
+        4,
+        "CE_PERF_SEND_RM_WAVES"
+      ]
+    ],
+    "VLS": [
+      [
+        23,
+        "PERFEVENT_VLS_ACTIVE"
+      ]
+    ]
+  },
+  "action": "config,disable,read_dump,enable",
+  "conditions": {
+    "kernelnames": [],
+    "include": false,
+    "is_perkernel": false,
+    "is_multi_device": false,
+    "counts": 10
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "perfList": {
+    "ISU": [
+      [
+        80,
+        "AP_PERF_ISU_ARB_VLS_STALL"
+      ],
+      [
+        40,
+        "AP_PERF_INST_TRANS_FP32"
+      ],
+      [
+        24,
+        "AP_PERF_INST_GENERIC_RD"
+      ],
+      [
+        42,
+        "AP_PERF_INST_CYCLES_VALU"
+      ],
+      [
+        38,
+        "AP_PERF_INST_MMA_INT8"
+      ],
+      [
+        29,
+        "AP_PERF_INST_BSM_WR"
+      ]
+    ],
+    "VL1": [
+      [
+        5,
+        "p_total_write_instruction_event"
+      ],
+      [
+        153,
+        "perf_inflt_rd_req"
+      ]
+    ],
+    "L2C": [
+      [
+        55,
+        "perf_dnoc_rd_histogram_1K_2K"
+      ],
+      [
+        10,
+        "perf_wr_req"
+      ],
+      [
+        60,
+        "perf_dnoc_wrreq"
+      ],
+      [
+        45,
+        "perf_dnoc_rdreq"
+      ]
+    ]
+  },
+  "action": "config,disable,read_dump,enable",
+  "conditions": {
+    "kernelnames": [],
+    "include": false,
+    "is_perkernel": false,
+    "is_multi_device": false,
+    "counts": 10
+  }
+}

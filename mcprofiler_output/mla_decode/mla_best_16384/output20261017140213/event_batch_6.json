@@ -1,0 +1,52 @@
+{
+  "perfList": {
+    "ISU": [
+      [
+        9,
+        "AP_PERF_INSTS_MMA"
+      ],
+      [
+        11,
+        "AP_PERF_INSTS_GVM"
+      ],
+      [
+        72,
+        "AP_PERF_BSM_RD_CYCLES"
+      ],
+      [
+        36,
+        "AP_PERF_INST_MMA_FP16"
+      ],
+      [
+        33,
+        "AP_PERF_INST_MMA_F64"
+      ],
+      [
+        68,
+        "AP_PERF_BSM_INFLIGHT_LEVEL"
+      ]
+    ],
+    "L2C": [
+      [
+        46,
+        "perf_dnoc_rdreq_32B"
+      ],
+      [
+        20,
+        "perf_sector_hit"
+      ],
+      [
+        1,
+        "1_b1"
+      ]
+    ]
+  },
+  "action": "config,disable,read_dump,enable",
+  "conditions": {
+    "kernelnames": [],
+    "include": false,
+    "is_perkernel": false,
+    "is_multi_device": false,
+    "counts": 10
+  }
+}

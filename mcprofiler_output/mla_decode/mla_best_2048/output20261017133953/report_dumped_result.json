@@ -1,0 +1,500 @@
+{
+    "Summary": [
+        {
+            "data": 10563820,
+            "isError": false,
+            "message": "",
+            "name": "Total Instructions"
+        },
+        {
+            "data": 9323036,
+            "isError": false,
+            "message": "",
+            "name": "Compute Instructions"
+        },
+        {
+            "data": 1240784,
+            "isError": false,
+            "message": "",
+            "name": "Memory Instructions"
+        },
+        {
+            "data": 9704459.999,
+            "isError": false,
+            "message": "",
+            "name": "Total Cycles"
+        },
+        {
+            "data": 17225.871606260283,
+            "isError": false,
+            "message": "",
+            "name": "Memory Access per Second"
+        },
+        {
+            "data": 443875.54807692306,
+            "isError": false,
+            "message": "",
+            "name": "Average AP busy cycles"
+        },
+        {
+            "data": 0.0048417016510801944,
+            "isError": false,
+            "message": "",
+            "name": "AP busy Duty"
+        },
+        {
+            "data": 26.622275036941335,
+            "isError": false,
+            "message": "",
+            "name": "Compute Instructions busy Duty"
+        },
+        {
+            "processed_data": {
+                "all_ops": 2222710272.0,
+                "all_memacs": 9429920.0,
+                "during": 469861.0,
+                "block_num": 104,
+                "vl1_memacs": 92995584.0,
+                "l2c_memacs": 117475328.0
+            },
+            "isError": false,
+            "message": "",
+            "name": "RoofLine"
+        }
+    ],
+    "CE Statistics": [
+        {
+            "data": 6377.0,
+            "isError": false,
+            "message": "",
+            "name": "WORKGROUPS"
+        },
+        {
+            "data": 12708.0,
+            "isError": false,
+            "message": "",
+            "name": "WAVES"
+        },
+        {
+            "data": 10465.356310985206,
+            "isError": false,
+            "message": "",
+            "name": "Average Wave life cycles"
+        }
+    ],
+    "ISU Statistics": [
+        {
+            "data": {
+                "MTE_4CYCLES": 28377568.0,
+                "MTE_16CYCLES": 69197824.0,
+                "MMA_16CYCLES": 13926400.0,
+                "MMA_32CYCLES": 0.0
+            },
+            "isError": false,
+            "message": "",
+            "name": "Compute Instructions Cycles Rate"
+        },
+        {
+            "data": {
+                "0": 6140800.0,
+                "1": 6140800.0,
+                "2": 6148512.0,
+                "3": 6148512.0,
+                "4": 6148512.0,
+                "5": 6148512.0,
+                "6": 6142176.0,
+                "7": 6140800.0
+            },
+            "isError": false,
+            "message": "",
+            "name": "DPC Computing cycles comparison"
+        },
+        {
+            "data": {
+                "wsm_stall": 941039.0,
+                "vls_pipeline_stall": 1341389.0,
+                "vls_wdata_stall": 503424.0,
+                "valu_stall": 0.0
+            },
+            "isError": false,
+            "message": "",
+            "name": "ISU stall cycles layout"
+        },
+        {
+            "data": {
+                "MTE": 7364696.0,
+                "MMA": 217600.0,
+                "STE": 877304.0,
+                "GVM": 364464.0,
+                "BSM": 828800.0,
+                "LDU": 47520.0,
+                "MISC": 863436.0
+            },
+            "isError": false,
+            "message": "",
+            "name": "Instructions Comparison"
+        }
+    ],
+    "Memory Statistics": [
+        {
+            "data": 299040,
+            "isError": false,
+            "message": "",
+            "name": "Global Read Instructions"
+        },
+        {
+            "data": 65392,
+            "isError": false,
+            "message": "",
+            "name": "Global Write Instructions"
+        },
+        {
+            "data": 0.0,
+            "isError": false,
+            "message": "",
+            "name": "Global Atomic Instructions"
+        },
+        {
+            "data": 0,
+            "isError": false,
+            "message": "",
+            "name": "Private Read Instructions"
+        },
+        {
+            "data": 0,
+            "isError": false,
+            "message": "",
+            "name": "Private Write Instructions"
+        },
+        {
+            "data": 47520,
+            "isError": false,
+            "message": "",
+            "name": "Constant Read Instructions"
+        },
+        {
+            "data": 29214,
+            "isError": false,
+            "message": "",
+            "name": "Constant Read SL1 Instructions"
+        },
+        {
+            "data": 1559,
+            "isError": false,
+            "message": "",
+            "name": "Constant Read L2 Instructions"
+        },
+        {
+            "data": 94.61634090752123,
+            "isError": false,
+            "message": "",
+            "name": "Constant SL1 Hit Rate"
+        },
+        {
+            "data": 299056,
+            "isError": false,
+            "message": "",
+            "name": "VL1 Read Instructions"
+        },
+        {
+            "data": 65408,
+            "isError": false,
+            "message": "",
+            "name": "VL1 Write Instructions"
+        },
+        {
+            "data": 0.0,
+            "isError": false,
+            "message": "",
+            "name": "VL1 Atomic Instructions"
+        },
+        {
+            "data": 92.0715375044045,
+            "isError": false,
+            "message": "",
+            "name": "VL1 Hit Rate"
+        },
+        {
+            "data": 1380576,
+            "isError": false,
+            "message": "",
+            "name": "L2C Read Instructions"
+        },
+        {
+            "data": 925748,
+            "isError": false,
+            "message": "",
+            "name": "L2C Write Instructions"
+        },
+        {
+            "data": 0.0,
+            "isError": false,
+            "message": "",
+            "name": "L2C Atomic Instructions"
+        },
+        {
+            "data": 96.72096257492346,
+            "isError": false,
+            "message": "",
+            "name": "L2C Hit Rate"
+        },
+        {
+            "data": 51200.0,
+            "isError": false,
+            "message": "",
+            "name": "Total Atomic Instructions"
+        },
+        {
+            "data": 20390.0,
+            "isError": false,
+            "message": "",
+            "name": "Dnoc Read Req"
+        },
+        {
+            "data": 54126.0,
+            "isError": false,
+            "message": "",
+            "name": "Dnoc Write Req"
+        },
+        {
+            "data": 2524608.0,
+            "isError": false,
+            "message": "",
+            "name": "Global Memory Read bytes"
+        },
+        {
+            "data": 6905312.0,
+            "isError": false,
+            "message": "",
+            "name": "Global Memory Write bytes"
+        },
+        {
+            "data": 315.57577243746937,
+            "isError": false,
+            "message": "",
+            "name": "Dnoc Read Average Latency"
+        },
+        {
+            "data": {
+                "vl1c": 92.0715375044045,
+                "l2c": 96.72096257492346,
+                "sl1": 94.61634090752123,
+                "global_kernel_rd": 299040,
+                "global_kernel_wr": 65392,
+                "private_kernel_rd": 0,
+                "private_kernel_wr": 0,
+                "generic_kernel_rd": 16,
+                "generic_kernel_wr": 16,
+                "const_kernel_rd": 47520,
+                "shared_kernel_rd": 678400,
+                "shared_kernel_wr": 99200,
+                "Ggeneric_vl1c_rd": 299056,
+                "Ggeneric_vl1c_wr": 65408,
+                "const_sl1c_rd": 29214,
+                "sl1_l2c_rd": 1559,
+                "vl1c_l2c_rd": 1380576,
+                "vl1c_l2c_wr": 925748,
+                "l2c_Gmemory_rd": null,
+                "l2c_Gmemory_wr": null
+            },
+            "isError": false,
+            "message": "",
+            "name": "Memory Data Flow Chart"
+        },
+        {
+            "data": {
+                "0-255": 10912.0,
+                "256-511": 9344.0,
+                "512-1k": 1629.0,
+                "1k-2k": 103.0,
+                "2k-": 0.0
+            },
+            "isError": false,
+            "message": "",
+            "name": "Dnoc Read Latency Histogram"
+        },
+        {
+            "data": {
+                "pt0": 0.0,
+                "pt1": 0.0,
+                "pt2": 0.0,
+                "pt3": 0.0
+            },
+            "isError": false,
+            "message": "",
+            "name": "VL1 partition stall cycles layout"
+        }
+    ],
+    "Workgroup Memory": [
+        {
+            "data": 678400.0,
+            "isError": false,
+            "message": "",
+            "name": "load instructions"
+        },
+        {
+            "data": 99200.0,
+            "isError": false,
+            "message": "",
+            "name": "store instructions"
+        },
+        {
+            "data": 51200.0,
+            "isError": false,
+            "message": "",
+            "name": "atomic instructions"
+        },
+        {
+            "data": 828800.0,
+            "isError": false,
+            "message": "",
+            "name": "total instructions"
+        },
+        {
+            "data": 41.511880896226415,
+            "isError": false,
+            "message": "",
+            "name": "average latency per load instruction"
+        },
+        {
+            "data": 45.52007056451613,
+            "isError": false,
+            "message": "",
+            "name": "average latency per store instruction"
+        },
+        {
+            "data": 39.025390625,
+            "isError": false,
+            "message": "",
+            "name": "average latency per atomic instruction"
+        },
+        {
+            "data": 48.10201858108108,
+            "isError": false,
+            "message": "",
+            "name": "average latency of all stages per instruction"
+        },
+        {
+            "data": 4.471745283018868,
+            "isError": false,
+            "message": "",
+            "name": "average cycles per load instruction"
+        },
+        {
+            "data": 7.354838709677419,
+            "isError": false,
+            "message": "",
+            "name": "average cycles per store instruction"
+        },
+        {
+            "data": 0.250625,
+            "isError": false,
+            "message": "",
+            "name": "average cycles per atomic instruction"
+        },
+        {
+            "data": 1.166023166023166,
+            "isError": false,
+            "message": "",
+            "name": "average conflict cycles per instruction"
+        },
+        {
+            "data": 4.556061776061776,
+            "isError": false,
+            "message": "",
+            "name": "average cycles per instruction"
+        },
+        {
+            "data": 74.40721343706039,
+            "isError": false,
+            "message": "",
+            "name": "shared memory access efficiency"
+        }
+    ],
+    "Occupancy": [
+        {
+            "data": 12708.0,
+            "isError": false,
+            "message": "",
+            "name": "Achieved waves"
+        },
+        {
+            "data": 12708.0,
+            "isError": false,
+            "message": "",
+            "name": "Dispatched waves"
+        }
+    ],
+    "GPU Throughput Statistics": [
+        {
+            "data": 46163057.0,
+            "isError": false,
+            "message": "",
+            "name": "AP active cycles"
+        },
+        {
+            "data": 17.71028292168779,
+            "isError": false,
+            "message": "",
+            "name": "AP MTE Duty ratio"
+        },
+        {
+            "data": 1.9004460644796553,
+            "isError": false,
+            "message": "",
+            "name": "AP STE Duty ratio"
+        },
+        {
+            "data": 1.8854903824935163,
+            "isError": false,
+            "message": "",
+            "name": "AP MMA Duty ratio"
+        },
+        {
+            "data": 0.0,
+            "isError": false,
+            "message": "",
+            "name": "VLS Duty ratio"
+        },
+        {
+            "data": 0.0006584223484179603,
+            "isError": false,
+            "message": "",
+            "name": "L2C Duty ratio"
+        }
+    ],
+    "Compute workload": [
+        {
+            "data": 22.482861952790294,
+            "isError": false,
+            "message": "",
+            "name": "instruction per cycle"
+        },
+        {
+            "data": 0.21618136493067588,
+            "isError": false,
+            "message": "",
+            "name": "instruction throughput"
+        },
+        {
+            "data": 5.404534123266897,
+            "isError": false,
+            "message": "",
+            "name": "instruction throughput efficiency"
+        }
+    ],
+    "Instruction Statistics": [
+        {
+            "data": 10563820.0,
+            "isError": false,
+            "message": "",
+            "name": "instruction number"
+        },
+        {
+            "data": 101575.19230769231,
+            "isError": false,
+            "message": "",
+            "name": "instructions per AP"
+        }
+    ]
+}

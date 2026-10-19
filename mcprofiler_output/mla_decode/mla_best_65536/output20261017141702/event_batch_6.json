@@ -1,0 +1,52 @@
+{
+  "perfList": {
+    "ISU": [
+      [
+        18,
+        "AP_PERF_INST_GLOBAL_RD"
+      ],
+      [
+        24,
+        "AP_PERF_INST_GENERIC_RD"
+      ],
+      [
+        55,
+        "AP_PERF_INST_CYCLES_MMA_32CYCLES"
+      ],
+      [
+        101,
+        "AP_PERF_MTE_PI_SEG_SEL_F64"
+      ],
+      [
+        37,
+        "AP_PERF_INST_MMA_BF16"
+      ],
+      [
+        74,
+        "AP_PERF_BSM_ATOMIC_CYCLES"
+      ]
+    ],
+    "L2C": [
+      [
+        56,
+        "perf_dnoc_rd_histogram_2K_INF"
+      ],
+      [
+        20,
+        "perf_sector_hit"
+      ],
+      [
+        1,
+        "1_b1"
+      ]
+    ]
+  },
+  "action": "config,disable,read_dump,enable",
+  "conditions": {
+    "kernelnames": [],
+    "include": false,
+    "is_perkernel": false,
+    "is_multi_device": false,
+    "counts": 10
+  }
+}

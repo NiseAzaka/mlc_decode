@@ -1,0 +1,471 @@
+{
+    "Summary": [
+        {
+            "name": "Total Instructions",
+            "description": "number of all instructions",
+            "value": "14,532,972"
+        },
+        {
+            "name": "Compute Instructions",
+            "description": "number of compute instructions",
+            "value": "12,477,468"
+        },
+        {
+            "name": "Memory Instructions",
+            "description": "number of memory instructions",
+            "value": "2,055,504"
+        },
+        {
+            "name": "Total Cycles",
+            "description": "cycles use by kernel",
+            "value": "9,212,435.17(Kcycles)"
+        },
+        {
+            "name": "Memory Access per Second",
+            "description": "memory access per second",
+            "value": "38,169.53(MB/s)"
+        },
+        {
+            "name": "Average AP busy cycles",
+            "description": "Average busy cycles per AP",
+            "value": "577,012.08"
+        },
+        {
+            "name": "AP busy Duty",
+            "description": "average AP busy duty of total cycles",
+            "value": "0.01%"
+        },
+        {
+            "name": "Compute Instructions busy Duty",
+            "description": "Compute Instructions busy duty of total AP cycles",
+            "value": "27.14%"
+        },
+        {
+            "name": "RoofLine",
+            "description": "",
+            "value": {
+                "processed_data": {
+                    "all_ops": 4152335872.0,
+                    "all_memacs": 27018368.0,
+                    "during": 607554.0,
+                    "block_num": 104,
+                    "vl1_memacs": 111280128.0,
+                    "l2c_memacs": 178817024.0
+                },
+                "data": {
+                    "all_ops": 4152335872.0,
+                    "all_memacs": 27018368.0,
+                    "block_num": 104,
+                    "during": 607554.0,
+                    "core_clk": 1.125,
+                    "MAX_Flops_base": 1,
+                    "case_flops": 65.7164736986975,
+                    "MAX_Bandwith": 1843.2,
+                    "MAX_I": 260.0,
+                    "case_I": 1313.552698224933,
+                    "case_bandwith": 50.02956774212662,
+                    "case_VL1_I": 318.9253178072745,
+                    "case_L2C_I": 198.47131662382537,
+                    "mc_clk": 0.9
+                },
+                "filename": "/opt/mcProfiler-ubuntu18.04/output20261017134723/RoofLine20261017135427294.png"
+            }
+        }
+    ],
+    "CE Statistics": [
+        {
+            "name": "WORKGROUPS",
+            "description": "ce send workgroup",
+            "value": "7,081.0"
+        },
+        {
+            "name": "WAVES",
+            "description": "ce send waves",
+            "value": "15,524.0"
+        },
+        {
+            "name": "Average Wave life cycles",
+            "description": "average life cycles per wave from start to end",
+            "value": "11,729.73"
+        }
+    ],
+    "ISU Statistics": [
+        {
+            "name": "Compute Instructions Cycles Rate",
+            "description": "rate between compute instructions cycles",
+            "value": {
+                "data": {
+                    "MTE_4CYCLES": 37502944.0,
+                    "MTE_16CYCLES": 82731008.0,
+                    "MMA_16CYCLES": 27852800.0,
+                    "MMA_32CYCLES": 0.0
+                },
+                "filename": "/opt/mcProfiler-ubuntu18.04/output20261017134723/Compute_Instructions_Cycles_Rate20261017135428139.png"
+            }
+        },
+        {
+            "name": "DPC Computing cycles comparison",
+            "description": "Comparison on AP computing cycles",
+            "value": {
+                "data": {
+                    "0": 8147296.0,
+                    "1": 8140960.0,
+                    "2": 8139584.0,
+                    "3": 8139584.0,
+                    "4": 8139584.0,
+                    "5": 8147296.0,
+                    "6": 8147296.0,
+                    "7": 8147296.0
+                },
+                "filename": "/opt/mcProfiler-ubuntu18.04/output20261017134723/DPC_Computing_cycles_comparison20261017135428269.png"
+            }
+        },
+        {
+            "name": "ISU stall cycles layout",
+            "description": "ISU stall cycles layout",
+            "value": {
+                "data": {
+                    "wsm_stall": 1547724.0,
+                    "vls_pipeline_stall": 1960708.0,
+                    "vls_wdata_stall": 577152.0,
+                    "valu_stall": 0.0
+                },
+                "filename": "/opt/mcProfiler-ubuntu18.04/output20261017134723/ISU_stall_cycles_layout20261017135428579.png"
+            }
+        },
+        {
+            "name": "Instructions Comparison",
+            "description": "Comparison between all instructions",
+            "value": {
+                "data": {
+                    "MTE": 9698904.0,
+                    "MMA": 435200.0,
+                    "STE": 1078648.0,
+                    "GVM": 435888.0,
+                    "BSM": 1561600.0,
+                    "LDU": 58016.0,
+                    "MISC": 1264716.0
+                },
+                "filename": "/opt/mcProfiler-ubuntu18.04/output20261017134723/Instructions_Comparison20261017135428413.png"
+            }
+        }
+    ],
+    "Memory Statistics": [
+        {
+            "name": "Global Read Instructions",
+            "description": "Number of global read instructions in all APs",
+            "value": "361,248"
+        },
+        {
+            "name": "Global Write Instructions",
+            "description": "Number of global write instructions in all APs",
+            "value": "74,608"
+        },
+        {
+            "name": "Global Atomic Instructions",
+            "description": "Number of global atomic instructions in all APs",
+            "value": 0.0
+        },
+        {
+            "name": "Private Read Instructions",
+            "description": "Number of private read instructions in all APs",
+            "value": 0
+        },
+        {
+            "name": "Private Write Instructions",
+            "description": "Number of private write instructions in all APs",
+            "value": 0
+        },
+        {
+            "name": "Constant Read Instructions",
+            "description": "Number of smem instructions in all APs",
+            "value": "58,016"
+        },
+        {
+            "name": "Constant Read SL1 Instructions",
+            "description": "Num of LDU instructions in all SL1s",
+            "value": "35,764"
+        },
+        {
+            "name": "Constant Read L2 Instructions",
+            "description": "Num of SL1 data miss requests",
+            "value": "1,570"
+        },
+        {
+            "name": "Constant SL1 Hit Rate",
+            "description": "Total LDU instructions hit rate in all SL1s",
+            "value": "95.60%"
+        },
+        {
+            "name": "VL1 Read Instructions",
+            "description": "total read instructions in all VL1s",
+            "value": "361,264"
+        },
+        {
+            "name": "VL1 Write Instructions",
+            "description": "total write instructions in all VL1s",
+            "value": "74,624"
+        },
+        {
+            "name": "VL1 Atomic Instructions",
+            "description": "total atomic instructions in all VL1s",
+            "value": 0.0
+        },
+        {
+            "name": "VL1 Hit Rate",
+            "description": "hit rate of all instructions in all VL1s",
+            "value": "91.39%"
+        },
+        {
+            "name": "L2C Read Instructions",
+            "description": "total read instructions in all L2Cs",
+            "value": "1,912,242"
+        },
+        {
+            "name": "L2C Write Instructions",
+            "description": "total write instructions in all L2Cs",
+            "value": "999,470"
+        },
+        {
+            "name": "L2C Atomic Instructions",
+            "description": "total atomic instructions in all L2Cs",
+            "value": 0.0
+        },
+        {
+            "name": "L2C Hit Rate",
+            "description": "hit rate of all instructions in all L2Cs",
+            "value": "92.51%"
+        },
+        {
+            "name": "Total Atomic Instructions",
+            "description": "total atomic instructions in memory access, include global atomic and shared memory atomic",
+            "value": "64,000.0"
+        },
+        {
+            "name": "Dnoc Read Req",
+            "description": "number of dnoc read requests",
+            "value": "118,302.0"
+        },
+        {
+            "name": "Dnoc Write Req",
+            "description": "number of dnoc write requests",
+            "value": "91,552.0"
+        },
+        {
+            "name": "Global Memory Read bytes",
+            "description": "bytes read from global memory",
+            "value": "15,320,960.0byte"
+        },
+        {
+            "name": "Global Memory Write bytes",
+            "description": "bytes write from global memory",
+            "value": "11,697,408.0byte"
+        },
+        {
+            "name": "Dnoc Read Average Latency",
+            "description": "average latency of dnoc read request",
+            "value": 260.51
+        },
+        {
+            "name": "Memory Data Flow Chart",
+            "description": "",
+            "value": {
+                "data": {
+                    "vl1c": 91.38663823247938,
+                    "l2c": 92.50508670384787,
+                    "sl1": 95.60026902813586,
+                    "global_kernel_rd": 361248,
+                    "global_kernel_wr": 74608,
+                    "private_kernel_rd": 0,
+                    "private_kernel_wr": 0,
+                    "generic_kernel_rd": 16,
+                    "generic_kernel_wr": 16,
+                    "const_kernel_rd": 58016,
+                    "shared_kernel_rd": 1331200,
+                    "shared_kernel_wr": 166400,
+                    "Ggeneric_vl1c_rd": 361264,
+                    "Ggeneric_vl1c_wr": 74624,
+                    "const_sl1c_rd": 35764,
+                    "sl1_l2c_rd": 1570,
+                    "vl1c_l2c_rd": 1912242,
+                    "vl1c_l2c_wr": 999470,
+                    "l2c_Gmemory_rd": null,
+                    "l2c_Gmemory_wr": null
+                },
+                "filename": "/opt/mcProfiler-ubuntu18.04/output20261017134723/Memory_Data_Flow_Chart20261017135428745.png"
+            }
+        },
+        {
+            "name": "Dnoc Read Latency Histogram",
+            "description": "histogram of dnoc read latency",
+            "value": {
+                "data": {
+                    "0-255": 88653.0,
+                    "256-511": 24838.0,
+                    "512-1k": 3797.0,
+                    "1k-2k": 149.0,
+                    "2k-": 113.0
+                },
+                "filename": "/opt/mcProfiler-ubuntu18.04/output20261017134723/Dnoc_Read_Latency_Histogram20261017135429016.png"
+            }
+        },
+        {
+            "name": "VL1 partition stall cycles layout",
+            "description": "VL1 partition access stall cycles layout",
+            "value": {
+                "data": {
+                    "pt0": 0.0,
+                    "pt1": 0.0,
+                    "pt2": 0.0,
+                    "pt3": 0.0
+                },
+                "filename": "/opt/mcProfiler-ubuntu18.04/output20261017134723/VL1_partition_stall_cycles_layout20261017135429151.png"
+            }
+        }
+    ],
+    "Workgroup Memory": [
+        {
+            "name": "load instructions",
+            "description": "number of total workgroup memory load instructions",
+            "value": "1,331,200.0"
+        },
+        {
+            "name": "store instructions",
+            "description": "number of total workgroup memory write instructions",
+            "value": "166,400.0"
+        },
+        {
+            "name": "atomic instructions",
+            "description": "number of total workgroup memory atomic instructions",
+            "value": "64,000.0"
+        },
+        {
+            "name": "total instructions",
+            "description": "number of total workgroup memory instructions",
+            "value": "1,561,600.0"
+        },
+        {
+            "name": "average latency per load instruction",
+            "description": "average latency per WG-load from issue to mem-ops done",
+            "value": 44.25
+        },
+        {
+            "name": "average latency per store instruction",
+            "description": "average latency per WG-store from issue to memops done",
+            "value": 44.49
+        },
+        {
+            "name": "average latency per atomic instruction",
+            "description": "average latency per WG-atom from issue to memops done",
+            "value": 39.32
+        },
+        {
+            "name": "average latency of all stages per instruction",
+            "description": "average latency of all WG-inst from issue to memops done",
+            "value": 49.91
+        },
+        {
+            "name": "average cycles per load instruction",
+            "description": "average cycles per WG-load when issuing (with bank conflict)",
+            "value": 4.35
+        },
+        {
+            "name": "average cycles per store instruction",
+            "description": "average cycles per WG-store when issuing (with bank conflict)",
+            "value": 7.38
+        },
+        {
+            "name": "average cycles per atomic instruction",
+            "description": "average cycles per WG-atom when issuing (with bank conflict)",
+            "value": 0.2
+        },
+        {
+            "name": "average conflict cycles per instruction",
+            "description": "average conflict cycles per WG-inst when bank conflict happens",
+            "value": 1.23
+        },
+        {
+            "name": "average cycles per instruction",
+            "description": "average cycles per WG-inst when issuing (with bank conflict)",
+            "value": 4.5
+        },
+        {
+            "name": "shared memory access efficiency",
+            "description": "Proportion of NON-CONFLICT access",
+            "value": "72.59%"
+        }
+    ],
+    "Occupancy": [
+        {
+            "name": "Achieved waves",
+            "description": "number of achieved waves",
+            "value": "15,524.0"
+        },
+        {
+            "name": "Dispatched waves",
+            "description": "number of dispatched waves",
+            "value": "15,524.0"
+        }
+    ],
+    "GPU Throughput Statistics": [
+        {
+            "name": "AP active cycles",
+            "description": "number of wave instruction cycles executed on the AP",
+            "value": "60,009,256.0"
+        },
+        {
+            "name": "AP MTE Duty ratio",
+            "description": "MTE Duty ratio relative to AP active",
+            "value": "17.78%"
+        },
+        {
+            "name": "AP STE Duty ratio",
+            "description": "STE Duty ratio relative to AP active",
+            "value": "1.80%"
+        },
+        {
+            "name": "AP MMA Duty ratio",
+            "description": "MMA Duty ratio relative to AP active",
+            "value": "2.90%"
+        },
+        {
+            "name": "VLS Duty ratio",
+            "description": "VLS Duty ratio relative to AP active",
+            "value": "0.0%"
+        },
+        {
+            "name": "L2C Duty ratio",
+            "description": "L2C Duty ratio relative to L2C active",
+            "value": "0.00%"
+        }
+    ],
+    "Compute workload": [
+        {
+            "name": "instruction per cycle",
+            "description": "The number of instructions per busy cycle across all sub-unit instances",
+            "value": 23.92
+        },
+        {
+            "name": "instruction throughput",
+            "description": "The percent of achieved instructions and theoretical instructions during all busy cycles ",
+            "value": 0.23
+        },
+        {
+            "name": "instruction throughput efficiency",
+            "description": "The percentage of the maximum instruction throughput achieved during all busy cycles ",
+            "value": "5.75%"
+        }
+    ],
+    "Instruction Statistics": [
+        {
+            "name": "instruction number",
+            "description": "The total number of instructions",
+            "value": "14,532,972.0"
+        },
+        {
+            "name": "instructions per AP",
+            "description": "The number of instructions per PEU",
+            "value": "139,740.12"
+        }
+    ]
+}

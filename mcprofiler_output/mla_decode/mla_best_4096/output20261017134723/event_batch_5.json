@@ -1,0 +1,56 @@
+{
+  "perfList": {
+    "ISU": [
+      [
+        38,
+        "AP_PERF_INST_MMA_INT8"
+      ],
+      [
+        16,
+        "AP_PERF_INSTS_LDU"
+      ],
+      [
+        32,
+        "AP_PERF_INST_FMA_F64"
+      ],
+      [
+        20,
+        "AP_PERF_INST_GLOBAL_ATOMIC"
+      ],
+      [
+        72,
+        "AP_PERF_BSM_RD_CYCLES"
+      ],
+      [
+        43,
+        "AP_PERF_INST_CYCLES_MMA"
+      ]
+    ],
+    "L2C": [
+      [
+        1,
+        "1_b1"
+      ],
+      [
+        52,
+        "perf_dnoc_rd_histogram_0_255"
+      ],
+      [
+        74,
+        "perf_req"
+      ],
+      [
+        272,
+        "perf_dnoc_wrreq_128B"
+      ]
+    ]
+  },
+  "action": "config,disable,read_dump,enable",
+  "conditions": {
+    "kernelnames": [],
+    "include": false,
+    "is_perkernel": false,
+    "is_multi_device": false,
+    "counts": 10
+  }
+}

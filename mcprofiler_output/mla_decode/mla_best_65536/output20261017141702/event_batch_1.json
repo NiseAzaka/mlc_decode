@@ -1,0 +1,130 @@
+{
+  "perfList": {
+    "ISU": [
+      [
+        17,
+        "AP_PERF_INST_MISC"
+      ],
+      [
+        38,
+        "AP_PERF_INST_MMA_INT8"
+      ],
+      [
+        82,
+        "AP_PERF_ISU_ARB_VALU_STALL"
+      ],
+      [
+        30,
+        "AP_PERF_INST_BSM_ATOMIC"
+      ],
+      [
+        68,
+        "AP_PERF_BSM_INFLIGHT_LEVEL"
+      ],
+      [
+        10,
+        "AP_PERF_INSTS_SALU"
+      ]
+    ],
+    "L2C": [
+      [
+        51,
+        "perf_dnoc_rdreq_inflight_level"
+      ],
+      [
+        55,
+        "perf_dnoc_rd_histogram_1K_2K"
+      ],
+      [
+        52,
+        "perf_dnoc_rd_histogram_0_255"
+      ],
+      [
+        54,
+        "perf_dnoc_rd_histogram_512_1K"
+      ]
+    ],
+    "CE": [
+      [
+        2,
+        "CE_PERF_BUSY_CYCLES"
+      ],
+      [
+        4,
+        "CE_PERF_SEND_RM_WAVES"
+      ],
+      [
+        3,
+        "CE_PERF_SEND_RM_WORKGROUPS"
+      ]
+    ],
+    "VL1": [
+      [
+        27,
+        "p_stall_due_oldest_pt1"
+      ],
+      [
+        5,
+        "p_total_write_instruction_event"
+      ],
+      [
+        28,
+        "p_stall_due_oldest_pt2"
+      ],
+      [
+        4,
+        "p_total_read_instruction_event"
+      ]
+    ],
+    "RM": [
+      [
+        20,
+        "RM_PERF_DISPATCHED_WAVES_P1"
+      ],
+      [
+        58,
+        "RM_PERF_WAVES_InFlight_Level_P3"
+      ],
+      [
+        10,
+        "RM_PERF_WAVES_InFlight_Level_P0"
+      ],
+      [
+        36,
+        "RM_PERF_DISPATCHED_WAVES_P2"
+      ]
+    ],
+    "SL1": [
+      [
+        56,
+        "sl1_kcache_total_miss_event"
+      ],
+      [
+        34,
+        "sl1_kcache_rd"
+      ],
+      [
+        57,
+        "sl1_kcache_total_hit_on_miss_event"
+      ],
+      [
+        55,
+        "sl1_kcache_total_hit_event"
+      ]
+    ],
+    "VLS": [
+      [
+        23,
+        "PERFEVENT_VLS_ACTIVE"
+      ]
+    ]
+  },
+  "action": "config,disable,read_dump,enable",
+  "conditions": {
+    "kernelnames": [],
+    "include": false,
+    "is_perkernel": false,
+    "is_multi_device": false,
+    "counts": 10
+  }
+}

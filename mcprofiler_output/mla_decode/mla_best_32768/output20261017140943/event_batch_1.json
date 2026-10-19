@@ -1,0 +1,130 @@
+{
+  "perfList": {
+    "ISU": [
+      [
+        19,
+        "AP_PERF_INST_GLOBAL_WR"
+      ],
+      [
+        37,
+        "AP_PERF_INST_MMA_BF16"
+      ],
+      [
+        21,
+        "AP_PERF_INST_GLOBAL_ATOMIC_64"
+      ],
+      [
+        16,
+        "AP_PERF_INSTS_LDU"
+      ],
+      [
+        88,
+        "AP_PERF_BSM_INFLIGHT_LEVEL_IN_AP"
+      ],
+      [
+        89,
+        "AP_PERF_ISU_AP_BUSY"
+      ]
+    ],
+    "VLS": [
+      [
+        23,
+        "PERFEVENT_VLS_ACTIVE"
+      ]
+    ],
+    "VL1": [
+      [
+        153,
+        "perf_inflt_rd_req"
+      ],
+      [
+        4,
+        "p_total_read_instruction_event"
+      ],
+      [
+        6,
+        "p_total_atomic_instruction_event"
+      ],
+      [
+        29,
+        "p_stall_due_oldest_pt3"
+      ]
+    ],
+    "L2C": [
+      [
+        74,
+        "perf_req"
+      ],
+      [
+        9,
+        "perf_rd_req"
+      ],
+      [
+        20,
+        "perf_sector_hit"
+      ],
+      [
+        272,
+        "perf_dnoc_wrreq_128B"
+      ]
+    ],
+    "CE": [
+      [
+        3,
+        "CE_PERF_SEND_RM_WORKGROUPS"
+      ],
+      [
+        4,
+        "CE_PERF_SEND_RM_WAVES"
+      ],
+      [
+        2,
+        "CE_PERF_BUSY_CYCLES"
+      ]
+    ],
+    "SL1": [
+      [
+        35,
+        "sl1_kcache_l2_rd"
+      ],
+      [
+        34,
+        "sl1_kcache_rd"
+      ],
+      [
+        55,
+        "sl1_kcache_total_hit_event"
+      ],
+      [
+        56,
+        "sl1_kcache_total_miss_event"
+      ]
+    ],
+    "RM": [
+      [
+        36,
+        "RM_PERF_DISPATCHED_WAVES_P2"
+      ],
+      [
+        10,
+        "RM_PERF_WAVES_InFlight_Level_P0"
+      ],
+      [
+        58,
+        "RM_PERF_WAVES_InFlight_Level_P3"
+      ],
+      [
+        20,
+        "RM_PERF_DISPATCHED_WAVES_P1"
+      ]
+    ]
+  },
+  "action": "config,disable,read_dump,enable",
+  "conditions": {
+    "kernelnames": [],
+    "include": false,
+    "is_perkernel": false,
+    "is_multi_device": false,
+    "counts": 10
+  }
+}

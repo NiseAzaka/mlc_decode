@@ -1,0 +1,98 @@
+{
+  "perfList": {
+    "ISU": [
+      [
+        29,
+        "AP_PERF_INST_BSM_WR"
+      ],
+      [
+        18,
+        "AP_PERF_INST_GLOBAL_RD"
+      ],
+      [
+        28,
+        "AP_PERF_INST_BSM_RD"
+      ],
+      [
+        17,
+        "AP_PERF_INST_MISC"
+      ],
+      [
+        69,
+        "AP_PERF_BSM_WR_INFLIGHT_LEVEL"
+      ],
+      [
+        38,
+        "AP_PERF_INST_MMA_INT8"
+      ]
+    ],
+    "VL1": [
+      [
+        26,
+        "p_stall_due_oldest_pt0"
+      ],
+      [
+        28,
+        "p_stall_due_oldest_pt2"
+      ],
+      [
+        27,
+        "p_stall_due_oldest_pt1"
+      ],
+      [
+        78,
+        "p_perf_miss_cnt"
+      ]
+    ],
+    "L2C": [
+      [
+        47,
+        "perf_dnoc_rdreq_64B"
+      ],
+      [
+        270,
+        "perf_dnoc_wrreq_32B_high"
+      ],
+      [
+        60,
+        "perf_dnoc_wrreq"
+      ],
+      [
+        53,
+        "perf_dnoc_rd_histogram_256_511"
+      ]
+    ],
+    "SL1": [
+      [
+        57,
+        "sl1_kcache_total_hit_on_miss_event"
+      ]
+    ],
+    "RM": [
+      [
+        52,
+        "RM_PERF_DISPATCHED_WAVES_P3"
+      ],
+      [
+        42,
+        "RM_PERF_WAVES_InFlight_Level_P2"
+      ],
+      [
+        4,
+        "RM_PERF_DISPATCHED_WAVES_P0"
+      ],
+      [
+        26,
+        "RM_PERF_WAVES_InFlight_Level_P1"
+      ]
+    ]
+  },
+  "action": "config,disable,read_dump,enable",
+  "conditions": {
+    "kernelnames": [],
+    "include": false,
+    "is_perkernel": false,
+    "is_multi_device": false,
+    "counts": 10
+  }
+}

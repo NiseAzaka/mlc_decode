@@ -1,0 +1,38 @@
+{
+  "perfList": {
+    "ISU": [
+      [
+        81,
+        "AP_PERF_ISU_ARB_DATA_STALL"
+      ],
+      [
+        32,
+        "AP_PERF_INST_FMA_F64"
+      ],
+      [
+        14,
+        "AP_PERF_INSTS_GVM_ATOMIC"
+      ],
+      [
+        34,
+        "AP_PERF_INST_MMA_F32"
+      ],
+      [
+        39,
+        "AP_PERF_INST_MMA_TF64"
+      ],
+      [
+        82,
+        "AP_PERF_ISU_ARB_VALU_STALL"
+      ]
+    ]
+  },
+  "action": "config,disable,read_dump,enable",
+  "conditions": {
+    "kernelnames": [],
+    "include": false,
+    "is_perkernel": false,
+    "is_multi_device": false,
+    "counts": 10
+  }
+}
